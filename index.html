@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="fundo">
+        <div id="fundos"></div>
+    </div>
+    <div class="container">
+        <div class="espaco"></div>
+        <div id="campo"><input id="display" type="text" name="display" readonly /> </div>
+        <div id="sete"><button id="7" class="btnBco" onclick="enviar(this.id)">7</button></div>
+        <div id="seis"><button id="6" class="btnBco" onclick="enviar(this.id)">6</button></div>
+        <div id="mais"><button id="+" class="btnVermelho" onclick="operacao(this.id)">+</button></div>
+        <div id="igual"><button id="=" class="btnVermelho" onclick="enviar(this.id)">=</button></div>
+        <div id="virgula"><button id="." class="btnTV" onclick="enviar(this.id)">,</button></div>
+        <div id="cinco"><button id="5" class="btnBco" onclick="enviar(this.id)">5</button></div>
+        <div id="quatro"><button id="4" class="btnBco" onclick="enviar(this.id)">4</button></div>
+        <div id="tres"><button id="3" class="btnBco" onclick="enviar(this.id)">3</button></div>
+        <div id="dois"><button id="2" class="btnBco" onclick="enviar(this.id)">2</button></div>
+        <div id="um"><button id="1" class="btnBco" onclick="enviar(this.id)">1</button></div>
+        <div id="zero"><button id="0" class="btnBco" onclick="enviar(this.id)">0</button></div>
+        <div id="oito"><button id="8" class="btnBco" onclick="enviar(this.id)">8</button></div>
+        <div id="nove"><button id="9" class="btnBco" onclick="enviar(this.id)">9</button></div>
+        <div id="clear"><button id="C" class="btnTV" onclick="limpar()">C</button></div>
+        <div id="porcentagem"><button id="%" class="btnTV" onclick="operacao(this.id)">%</button></div>
+        <div id="menos"><button id="-" class="btnVermelho" onclick="operacao(this.id)">-</button></div>
+        <div id="dividir"><button id="/" class="btnVermelho" onclick="operacao(this.id)">/</button></div>
+        <div id="multiplicar"><button id="*" class="btnVermelho" onclick="operacao(this.id)">*</button></div>
+        <div onclick="apagar()" id="backspace"><button id="«" class="btnTV"><label onclick="">«</label></button></div>
+        <div id="meisoumenos"><button id="±" class="btnTV" onclick="trocarSinal()">±</button></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

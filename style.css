@@ -1,0 +1,174 @@
+body, html {
+    margin:0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+}
+
+.fundo{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 100;
+    grid-template-rows: 100;
+    position: absolute;
+    grid-template-areas: "fundos";
+    align-content: center;
+    justify-content: center;
+}
+
+#fundos{
+    width: 69vh;
+    height: 98vh;
+    grid-area: fundos;
+    margin-bottom: 1vh;
+}
+
+.fundo > div{
+    background-color:#f8f9fa;
+    border: 2px solid;
+    border-color:#17a2b8;
+    border-radius: 10px;
+}
+
+.container{   
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    grid-template-columns: 100 100 100 100;
+    grid-template-rows: 100 100 100 100 100 100;
+    grid-gap: 1vh; /* espaçamento entre grids */
+    grid-template-areas: 
+    "campo campo campo campo"
+    "espaco espaco espaco espaco"
+    "porcentagem clear backspace dividir"
+    "sete oito nove multiplicar"
+    "quatro cinco seis menos"
+    "um dois tres mais"
+    "maisoumenos zero0 v igual";
+    align-content: center;
+    justify-content: center;
+}
+
+
+button{
+    padding: 0;
+    width: 15vh;
+    height: 15vh;
+    font-size: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+input{
+    width: 63vh;
+    height: 10vh;
+    outline: 0;
+    font-size: 50px;
+}
+
+.btnVermelho{
+    color:#fff;
+    background-color:#dc3545;
+    border-color:#dc3545;
+}
+
+.btnBco{
+    color:#343a40;
+    background-color:transparent;
+    border-color:#343a40
+}
+
+.btnTV{
+    color:#343a40;
+    background-color: transparent;
+    border-color: #dc3545;
+}
+
+.container > div{
+  
+}
+
+.espaco{
+    grid-area: espaco;
+}
+
+#campo{
+    grid-area: campo;
+}
+
+#porcentagem{
+    grid-area: porcentagem;
+}
+
+#clear{
+    grid-area: clear;
+}
+
+#backspace{
+    grid-area: backspace;
+}
+
+#dividir{
+    grid-area: dividir;
+}
+
+#sete{
+    grid-area: sete;
+}
+
+#seis{
+    grid-area: seis;
+}
+
+#cinco{
+    grid-area: cinco;
+}
+
+#quatro{
+    grid-area: quatro;
+}
+
+#tres{
+    grid-area: tres;
+}
+
+#dois{
+    grid-area: dois;
+}
+
+#um{
+    grid-area: um;
+}
+
+#zero{
+    grid-area: zero0;
+}
+
+#mais{
+    grid-area: mais;
+}
+
+#menos{
+    grid-area: menos;
+}
+
+#multiplicar{
+    grid-area: multiplicar;
+}
+
+#maisoumenos{
+    grid-area: maisoumenos;
+}
+
+#virgula{
+    grid-area: v;
+}
+
+#igual{
+    grid-area: igual;
+}
+
